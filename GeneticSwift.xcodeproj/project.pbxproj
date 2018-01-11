@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB9523B62007CDF100CBD488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523B52007CDF100CBD488 /* AppDelegate.swift */; };
+		DB9523B82007CDF100CBD488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523B72007CDF100CBD488 /* ViewController.swift */; };
+		DB9523BB2007CDF100CBD488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9523B92007CDF100CBD488 /* Main.storyboard */; };
+		DB9523BD2007CDF100CBD488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9523BC2007CDF100CBD488 /* Assets.xcassets */; };
+		DB9523C02007CDF100CBD488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9523BE2007CDF100CBD488 /* LaunchScreen.storyboard */; };
+		DB9523CB2007CDF100CBD488 /* GeneticSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */; };
+		DB9523D62007CDF100CBD488 /* GeneticSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB9523C72007CDF100CBD488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9523AA2007CDF100CBD488 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB9523B12007CDF100CBD488;
+			remoteInfo = GeneticSwift;
+		};
+		DB9523D22007CDF100CBD488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9523AA2007CDF100CBD488 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB9523B12007CDF100CBD488;
+			remoteInfo = GeneticSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB9523B22007CDF100CBD488 /* GeneticSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9523B52007CDF100CBD488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB9523B72007CDF100CBD488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB9523BA2007CDF100CBD488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB9523BC2007CDF100CBD488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB9523BF2007CDF100CBD488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB9523C12007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9523C62007CDF100CBD488 /* GeneticSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticSwiftTests.swift; sourceTree = "<group>"; };
+		DB9523CC2007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9523D12007CDF100CBD488 /* GeneticSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticSwiftUITests.swift; sourceTree = "<group>"; };
+		DB9523D72007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB9523AF2007CDF100CBD488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523C32007CDF100CBD488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523CE2007CDF100CBD488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB9523A92007CDF100CBD488 = {
+			isa = PBXGroup;
+			children = (
+				DB9523B42007CDF100CBD488 /* GeneticSwift */,
+				DB9523C92007CDF100CBD488 /* GeneticSwiftTests */,
+				DB9523D42007CDF100CBD488 /* GeneticSwiftUITests */,
+				DB9523B32007CDF100CBD488 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB9523B32007CDF100CBD488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB9523B22007CDF100CBD488 /* GeneticSwift.app */,
+				DB9523C62007CDF100CBD488 /* GeneticSwiftTests.xctest */,
+				DB9523D12007CDF100CBD488 /* GeneticSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB9523B42007CDF100CBD488 /* GeneticSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DB9523B52007CDF100CBD488 /* AppDelegate.swift */,
+				DB9523B72007CDF100CBD488 /* ViewController.swift */,
+				DB9523B92007CDF100CBD488 /* Main.storyboard */,
+				DB9523BC2007CDF100CBD488 /* Assets.xcassets */,
+				DB9523BE2007CDF100CBD488 /* LaunchScreen.storyboard */,
+				DB9523C12007CDF100CBD488 /* Info.plist */,
+			);
+			path = GeneticSwift;
+			sourceTree = "<group>";
+		};
+		DB9523C92007CDF100CBD488 /* GeneticSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */,
+				DB9523CC2007CDF100CBD488 /* Info.plist */,
+			);
+			path = GeneticSwiftTests;
+			sourceTree = "<group>";
+		};
+		DB9523D42007CDF100CBD488 /* GeneticSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */,
+				DB9523D72007CDF100CBD488 /* Info.plist */,
+			);
+			path = GeneticSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB9523B12007CDF100CBD488 /* GeneticSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9523DA2007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwift" */;
+			buildPhases = (
+				DB9523AE2007CDF100CBD488 /* Sources */,
+				DB9523AF2007CDF100CBD488 /* Frameworks */,
+				DB9523B02007CDF100CBD488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneticSwift;
+			productName = GeneticSwift;
+			productReference = DB9523B22007CDF100CBD488 /* GeneticSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB9523C52007CDF100CBD488 /* GeneticSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9523DD2007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwiftTests" */;
+			buildPhases = (
+				DB9523C22007CDF100CBD488 /* Sources */,
+				DB9523C32007CDF100CBD488 /* Frameworks */,
+				DB9523C42007CDF100CBD488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB9523C82007CDF100CBD488 /* PBXTargetDependency */,
+			);
+			name = GeneticSwiftTests;
+			productName = GeneticSwiftTests;
+			productReference = DB9523C62007CDF100CBD488 /* GeneticSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB9523D02007CDF100CBD488 /* GeneticSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9523E02007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwiftUITests" */;
+			buildPhases = (
+				DB9523CD2007CDF100CBD488 /* Sources */,
+				DB9523CE2007CDF100CBD488 /* Frameworks */,
+				DB9523CF2007CDF100CBD488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB9523D32007CDF100CBD488 /* PBXTargetDependency */,
+			);
+			name = GeneticSwiftUITests;
+			productName = GeneticSwiftUITests;
+			productReference = DB9523D12007CDF100CBD488 /* GeneticSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB9523AA2007CDF100CBD488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Iko Nakari";
+				TargetAttributes = {
+					DB9523B12007CDF100CBD488 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB9523C52007CDF100CBD488 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB9523B12007CDF100CBD488;
+					};
+					DB9523D02007CDF100CBD488 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB9523B12007CDF100CBD488;
+					};
+				};
+			};
+			buildConfigurationList = DB9523AD2007CDF100CBD488 /* Build configuration list for PBXProject "GeneticSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB9523A92007CDF100CBD488;
+			productRefGroup = DB9523B32007CDF100CBD488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB9523B12007CDF100CBD488 /* GeneticSwift */,
+				DB9523C52007CDF100CBD488 /* GeneticSwiftTests */,
+				DB9523D02007CDF100CBD488 /* GeneticSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB9523B02007CDF100CBD488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9523C02007CDF100CBD488 /* LaunchScreen.storyboard in Resources */,
+				DB9523BD2007CDF100CBD488 /* Assets.xcassets in Resources */,
+				DB9523BB2007CDF100CBD488 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523C42007CDF100CBD488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523CF2007CDF100CBD488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB9523AE2007CDF100CBD488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9523B82007CDF100CBD488 /* ViewController.swift in Sources */,
+				DB9523B62007CDF100CBD488 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523C22007CDF100CBD488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9523CB2007CDF100CBD488 /* GeneticSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9523CD2007CDF100CBD488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9523D62007CDF100CBD488 /* GeneticSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB9523C82007CDF100CBD488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB9523B12007CDF100CBD488 /* GeneticSwift */;
+			targetProxy = DB9523C72007CDF100CBD488 /* PBXContainerItemProxy */;
+		};
+		DB9523D32007CDF100CBD488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB9523B12007CDF100CBD488 /* GeneticSwift */;
+			targetProxy = DB9523D22007CDF100CBD488 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB9523B92007CDF100CBD488 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB9523BA2007CDF100CBD488 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB9523BE2007CDF100CBD488 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB9523BF2007CDF100CBD488 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB9523D82007CDF100CBD488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB9523D92007CDF100CBD488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB9523DB2007CDF100CBD488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB9523DC2007CDF100CBD488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB9523DE2007CDF100CBD488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneticSwift.app/GeneticSwift";
+			};
+			name = Debug;
+		};
+		DB9523DF2007CDF100CBD488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneticSwift.app/GeneticSwift";
+			};
+			name = Release;
+		};
+		DB9523E12007CDF100CBD488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeneticSwift;
+			};
+			name = Debug;
+		};
+		DB9523E22007CDF100CBD488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922P3K9888;
+				INFOPLIST_FILE = GeneticSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakarin0528.GeneticSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeneticSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB9523AD2007CDF100CBD488 /* Build configuration list for PBXProject "GeneticSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9523D82007CDF100CBD488 /* Debug */,
+				DB9523D92007CDF100CBD488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9523DA2007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9523DB2007CDF100CBD488 /* Debug */,
+				DB9523DC2007CDF100CBD488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9523DD2007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9523DE2007CDF100CBD488 /* Debug */,
+				DB9523DF2007CDF100CBD488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9523E02007CDF100CBD488 /* Build configuration list for PBXNativeTarget "GeneticSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9523E12007CDF100CBD488 /* Debug */,
+				DB9523E22007CDF100CBD488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB9523AA2007CDF100CBD488 /* Project object */;
+}
