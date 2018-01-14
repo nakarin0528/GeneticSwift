@@ -25,7 +25,7 @@ final class GA {
     var sumfitness = 0
     var n_min = 0
     
-    //擬似乱数
+    //make random number
     var next: CLong = 1
     
     private func rand() -> Int {
@@ -38,7 +38,7 @@ final class GA {
     }
     
     
-    //データ表示
+    //print data
     private func printEachChromFitness(_ i: Int) {
         print("[\(i)] ", terminator: "")
         for j in 0..<LEN_CHROM {
@@ -83,7 +83,7 @@ final class GA {
     }
     
     
-    // 突然変異
+    // mutation
     private func mutation(child: Int) {
         var n_mutate = 0
         var rand = 0.0
@@ -91,9 +91,9 @@ final class GA {
         rand = Double(self.rand()) / Double(RANDOM_MAX+1)   // 0..<1
         
         if rand < P_MUTAION {
-            // 突然変異位置
+            // position
             n_mutate = self.rand() % LEN_CHROM
-            //突然変異
+            // mutate
             self.printMutation(isBefore: true, child: child, n_mutate: n_mutate)
             switch self.chrom[child][n_mutate] {
             case 0:
@@ -111,7 +111,7 @@ final class GA {
     }
     
     
-    // fitnessの合計値の計算
+    // total fitness
     private func statistics() {
         self.max = 0
         self.min = POP_SIZE
@@ -130,14 +130,14 @@ final class GA {
     }
     
     
-    // 交叉
+    // crossover
     private func crossover(parent1: Int, parent2: Int, child1: inout Int, child2: inout Int) {  // child1,2はポインタ
         var min2 = 0
         var n_cross = 0
     
-        // 一番小さい値を探索
+        // min
         child1 = self.n_min
-        // 2番目に小さいものを探索
+        // second min
         min2 = POP_SIZE
         for i in 0..<POP_SIZE {
             if i != child1 {
@@ -148,9 +148,9 @@ final class GA {
             }
         }
         
-        // 交叉位置
+        // position
         n_cross = self.rand() % (LEN_CHROM-1) + 1   // n_cross = 1,...,5
-        // 交叉
+        // crossover
         self.printCrossover(isBefore: true, parent1: parent1, parent2: parent2, child1: child1, child2: child2, n_cross: n_cross)
         for i in 0..<n_cross {
             self.chrom[child1][i] = self.chrom[parent1][i]
@@ -166,7 +166,7 @@ final class GA {
     }
     
     
-    // 目的関数（1が多いほどgood）
+    // object Function
     private func objFunc(_ i: Int) -> Int {
         var count = 0
         
@@ -180,7 +180,7 @@ final class GA {
     }
     
     
-    // 各世代の処理
+    // Processing of each generation
     public func generation(gen: Int) {
         
     }
