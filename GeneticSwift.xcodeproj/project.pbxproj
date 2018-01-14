@@ -12,8 +12,7 @@
 		DB9523BB2007CDF100CBD488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9523B92007CDF100CBD488 /* Main.storyboard */; };
 		DB9523BD2007CDF100CBD488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9523BC2007CDF100CBD488 /* Assets.xcassets */; };
 		DB9523C02007CDF100CBD488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9523BE2007CDF100CBD488 /* LaunchScreen.storyboard */; };
-		DB9523CB2007CDF100CBD488 /* GeneticSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */; };
-		DB9523D62007CDF100CBD488 /* GeneticSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */; };
+		DB9523E42007CE3100CBD488 /* GA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9523E32007CE3100CBD488 /* GA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,8 @@
 		DB9523BF2007CDF100CBD488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB9523C12007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB9523C62007CDF100CBD488 /* GeneticSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticSwiftTests.swift; sourceTree = "<group>"; };
-		DB9523CC2007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB9523D12007CDF100CBD488 /* GeneticSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticSwiftUITests.swift; sourceTree = "<group>"; };
-		DB9523D72007CDF100CBD488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9523E32007CE3100CBD488 /* GA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				DB9523B42007CDF100CBD488 /* GeneticSwift */,
-				DB9523C92007CDF100CBD488 /* GeneticSwiftTests */,
-				DB9523D42007CDF100CBD488 /* GeneticSwiftUITests */,
 				DB9523B32007CDF100CBD488 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,30 +93,13 @@
 			children = (
 				DB9523B52007CDF100CBD488 /* AppDelegate.swift */,
 				DB9523B72007CDF100CBD488 /* ViewController.swift */,
+				DB9523E32007CE3100CBD488 /* GA.swift */,
 				DB9523B92007CDF100CBD488 /* Main.storyboard */,
 				DB9523BC2007CDF100CBD488 /* Assets.xcassets */,
 				DB9523BE2007CDF100CBD488 /* LaunchScreen.storyboard */,
 				DB9523C12007CDF100CBD488 /* Info.plist */,
 			);
 			path = GeneticSwift;
-			sourceTree = "<group>";
-		};
-		DB9523C92007CDF100CBD488 /* GeneticSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				DB9523CA2007CDF100CBD488 /* GeneticSwiftTests.swift */,
-				DB9523CC2007CDF100CBD488 /* Info.plist */,
-			);
-			path = GeneticSwiftTests;
-			sourceTree = "<group>";
-		};
-		DB9523D42007CDF100CBD488 /* GeneticSwiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB9523D52007CDF100CBD488 /* GeneticSwiftUITests.swift */,
-				DB9523D72007CDF100CBD488 /* Info.plist */,
-			);
-			path = GeneticSwiftUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +238,7 @@
 			files = (
 				DB9523B82007CDF100CBD488 /* ViewController.swift in Sources */,
 				DB9523B62007CDF100CBD488 /* AppDelegate.swift in Sources */,
+				DB9523E42007CE3100CBD488 /* GA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9523CB2007CDF100CBD488 /* GeneticSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9523D62007CDF100CBD488 /* GeneticSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
