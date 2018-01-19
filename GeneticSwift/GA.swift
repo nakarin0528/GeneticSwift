@@ -9,16 +9,14 @@
 import Foundation
 
 final class GA {
-    let MAX_GEN = 30
-    let POP_SIZE = 20
+    let MAX_GEN = 100
+    let POP_SIZE = 30
     let LEN_CHROM = 30
     let GEN_GAP = 0.4
-    let P_MUTAION = 0.3
+    let P_MUTAION = 0.2
     let RANDOM_MAX = 32767
-    let BEFORE = 0
-    let AFTER = 1
     
-    var chrom: [[Int]] = [[]]
+    var chrom = [[Int]]()
     var fitness: [Int] = []
     var max = 0
     var min = 0
@@ -26,15 +24,32 @@ final class GA {
     var n_min = 0
     
     //make random number
-    var next: CLong = 1
+    var next: Int16 = 1
+    
+    public func initialize() {
+        
+        for i in 0...POP_SIZE {
+            chrom.append([])
+            for _ in 0...LEN_CHROM {
+                chrom[i].append(self.rand() % 2)
+            }
+            self.fitness.append(self.objFunc(i))
+        }
+        
+        print("First Population")
+        self.printChromFitness()
+        print("--------------------------------------------------------")
+    }
+    
     
     private func rand() -> Int {
-        self.next = self.next * 1103515245 + 12345
-        return Int(UInt(next/65536)%32768)
+//        self.next = self.next * 1103515245 + 12345
+        self.next = Int16(arc4random_uniform(32767))
+        return Int(self.next)
     }
     
     private func srand(_ seed: Int) {
-        self.next = seed
+        self.next = Int16(seed)
     }
     
     
@@ -47,15 +62,14 @@ final class GA {
         print(": \(fitness[i])")
     }
     
-    private func printChromFitness() {
+    public func printChromFitness() {
         for i in 0..<POP_SIZE {
             self.printEachChromFitness(i)
         }
     }
     
     private func printStatistics(_ gen: Int) {
-        print("[gen=%2d] max=%d sumfitness=%d ave=%f",
-              gen, self.max, self.min, self.sumfitness, Double(self.sumfitness)/Double(POP_SIZE))
+        print("[gen=\(gen)] max=\(self.max) min=\(self.min) sumfitness=\(self.sumfitness) ave=\(Double(self.sumfitness)/Double(POP_SIZE))")
     }
 
     private func printCrossover(isBefore: Bool, parent1: Int, parent2: Int, child1: Int, child2: Int, n_cross: Int) {
@@ -64,21 +78,21 @@ final class GA {
             print("parent2   |"); self.printEachChromFitness(parent2)
             print("delete1   |"); self.printEachChromFitness(child1)
             print("delete2   |"); self.printEachChromFitness(child2)
-            print("n_cross=%d\n", n_cross)
+            print("n_cross=\(n_cross)")
         } else {
             print("child1   |"); self.printEachChromFitness(child1)
             print("child2   |"); self.printEachChromFitness(child2)
-            print("----------------------------")
+            print("--------------------------------------------------------")
         }
     }
     
     private func printMutation(isBefore: Bool, child: Int, n_mutate: Int) {
         if isBefore {
             print("child(OLD)|"); self.printEachChromFitness(child)
-            print("n_mutate=%d\n", n_mutate)
+            print("n_mutate=\(n_mutate)")
         } else {
             print("child(NEW)|"); self.printEachChromFitness(child)
-            print("----------------------------")
+            print("--------------------------------------------------------")
         }
     }
     
@@ -182,7 +196,44 @@ final class GA {
     
     // Processing of each generation
     public func generation(gen: Int) {
+        var parent1 = 0
+        var parent2 = 0
+        var child1 = 0
+        var child2 = 0
+        var n_gen = 0
+
+        // print Generation
+        self.statistics()
+        self.printStatistics(gen)
         
+        // generation change
+        n_gen = Int(Double(POP_SIZE) * GEN_GAP / 2.0)
+        for _ in 0...n_gen {
+            self.statistics()
+            parent1 = self.select()
+            parent2 = self.select()
+            self.crossover(parent1: parent1, parent2: parent2, child1: &child1, child2: &child2)
+            self.mutation(child: child1)
+            self.mutation(child: child2)
+        }
+    }
+    
+    private func select() -> Int{
+        var i = 0
+        var sum = 0
+        var rand = 0.0
+        // 0 <= num < 1
+        rand = Double(self.rand()) / Double(RANDOM_MAX+1)
+        
+        for _ in 0...POP_SIZE {
+            sum += self.fitness[i]
+            if (Double(sum) / Double(self.sumfitness)) > rand {
+                break
+            }
+            i += 1
+        }
+        
+        return i
     }
 }
 

@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let ga = GA()
+    var gen = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ga.initialize()
+        for gen in 1...ga.MAX_GEN {
+            ga.generation(gen: gen)
+        }
+        print("finish")
+        ga.printChromFitness()
     }
 
     override func didReceiveMemoryWarning() {
